@@ -19,7 +19,7 @@ Thus, $se(\hat \beta_j)$ are also biased and they are not valid for constructing
 OLS is no longer BLUE or symptotically efficient.
 
 ***
-_Review:_
+### _Review:_
 
 - **Assumption MLR.5 Homoskedasticity**     (page.88)
 
