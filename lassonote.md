@@ -1,6 +1,6 @@
 # LASSO regression Study Note
 
-## What is LASSO
+## About LASSO
 Consider a multiple linear regression model:
 $$ 
 \begin{aligned}
@@ -40,7 +40,7 @@ $$\frac{1}{n}\sum_{i=1}^n(y_n-\hat y_n)^2+\lambda \left \| \mathbf{b} \right \|_
 
 e.g.
 -  MSEを最小化にするための　$\hat y_i=\hat b_0+\hat b_1x_{1i}+\hat b_2x_{2i}+\hat b_3{x_3i}^3+b_4{x_4i}^3+u$という推定式があり、$x_3$と$x_4$はoverfittingを起こしたと仮定する
-- $\alpha\cdot L_1$ノルムを加えることで、$\mathrm{argmin(MSE)}$から$\mathrm{argmin(MSE}+\alpha \cdot |b|)$になる
+- $\alpha\cdot L_1$ノルムを加えることで、$b=\mathrm{argmin(MSE)}$から$b=\mathrm{argmin(MSE}+\alpha \cdot |b|)$になる
 - 新しい損失関数を最小化にするようにしたら、推定量のmagnitudeを抑えることができ、$x_3$と$x_4$の$y$への影響も小さくなる（過学習を抑えることができる）
 
 
@@ -67,6 +67,9 @@ result.1se<-predict(fit1, s=fit1$lambda.1se,
                     newx=model.matrix(.,dat1[,-ncol(dat1)]),
                     type="coefficients")
 ```
+
+***
+## Realization in Python
 
 ***
 ### Digression:
