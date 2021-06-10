@@ -1,5 +1,3 @@
-<font face="garamond">
-
 # LASSO regression Study Note
 
 ## What is LASSO
@@ -48,12 +46,35 @@ e.g.
 
 ***
 ## Realization in R
+``` r
+#必要なパッケージをダウンロードし、使用する
+install.packages("glmnet")
+library(glmnet)
+
+#データを読み込む
+data1<-read.table("C:\Users\koko\Desktop\data.csv", header=true)
+df1.outcome<-dat1$Y
+df1.x<-as.matrix(dat1[,1:20]])
+
+fit1<-cv.glmnet(df1.x,df1.outcome,family="gaussian",type.measure="deviance")
+
+#lambdaの値を表示する
+fit1$lambda.min #損失関数を最小化にするlambda
+fit1$lambda.1se #lambda.minより1seの範囲内で一番簡単なモデルを導くlambda（これを使う）
+
+#計算結果を表示
+result.1se<-predict(fit1, s=fit1$lambda.1se,
+                    newx=model.matrix(.,dat1[,-ncol(dat1)]),
+                    type="coefficients")
+```
 
 ***
 ### Digression:
+
+#### Differences between LASSO and Ridge regression:
 $L_1$ norm:
 $|v|_1=\sum |v_i|$
 
 $L_2$ norm:
 $|v|_2=\sqrt{\sum v_i^2}$　（ridge regで用いられている）
-
+>![avatar](https://i.loli.net/2018/11/19/5bf2b1deeb51e.jpg)
