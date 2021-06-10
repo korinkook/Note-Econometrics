@@ -1,9 +1,6 @@
 # Chapter 8 Heteroskedasticity
 
-<font face="EB Garamond">
-<font size=2>
-
-Consider the multple linear regression model:
+Consider a multple linear regression model:
 
  $y=\beta_0 + \beta_1x_1+\beta_2x_2+\cdots+\beta_kx_k+u$
 
