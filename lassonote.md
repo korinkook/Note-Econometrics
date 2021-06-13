@@ -70,6 +70,7 @@ result.1se<-predict(fit1, s=fit1$lambda.1se,
 
 ***
 ## Realization in Python
+tbd.
 
 ***
 ### Digression:
