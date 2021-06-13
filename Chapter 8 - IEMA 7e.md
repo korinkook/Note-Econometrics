@@ -11,7 +11,7 @@ Though, $Var(\hat \beta_j)$ are biased when heteroskekasticity occurs.
 
 ## **Consequences of heteroskedasticity:**
 
-Thus, $se(\hat \beta_j)$ are also biased and they are not valid for constructing confidence intervals and t statistics.
+$se(\hat \beta_j)$ are also biased and they are not valid for constructing confidence intervals and t statistics.
 
 OLS is no longer BLUE or symptotically efficient.
 
