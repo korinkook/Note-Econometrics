@@ -5,7 +5,7 @@ Consider a multple linear regression model:
  $y=\beta_0 + \beta_1x_1+\beta_2x_2+\cdots+\beta_kx_k+u$
 
 Under the first four Gauss-Markov assumptions, the OLS estimators are proved to be **unbiased**. The homoskedasticity assumption(MLR.5) states in terms of the error variance as $\space Var(u|\mathbf{x})=\sigma^2$.
-
+**
 Heteroskedasticity does not cause **bias** or **inconsistency** of $\beta_j$, and also do not affect $R^2$ or $\overline {R^2}$.
 Though, $Var(\hat \beta_j)$ are biased when heteroskekasticity occurs.
 
@@ -14,7 +14,7 @@ Though, $Var(\hat \beta_j)$ are biased when heteroskekasticity occurs.
 $se(\hat \beta_j)$ are also biased and they are not valid for constructing confidence intervals and t statistics.
 
 OLS is no longer BLUE or symptotically efficient.
-
+$\$
 ***
 ### _Review:_
 
